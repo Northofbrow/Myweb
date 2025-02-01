@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+}
+
+body {
+    font-family: 'Segoe UI', '微软雅黑', sans-serif;
+    background: #f8f9fa;
+}
+
+.course-card {
+    transition: transform 0.2s;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.badge {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: rgba(255,255,255,0.95) !important;
+}
+
+.nav-link {
+    color: #4a5568 !important;
+    border-radius: 8px;
+    margin: 0 4px;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    background: #f8f9fa;
+    transform: translateY(-1px);
+}
+
+.nav-link.active {
+    color: #fff !important;
+    background: #4299e1 !important;
+}
+
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.reflection-card {
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.reflection-card:hover {
+    transform: translateX(5px);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+        margin: 4px 0;
+    }
+    #searchInput {
+        margin-top: 12px;
+    }
+}
+
+.resources a {
+    position: relative;
+    z-index: 10;
+}

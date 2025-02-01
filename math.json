@@ -1,0 +1,186 @@
+[
+    
+    {
+        "id": "math-101",
+        "name": "微积分",
+        "instructor": "苏德矿",
+        "platform": "Bilibili",
+        "description": "和高等数学一样的内容，就是缺少微分方程，需要结合童雯雯老师的微分方程",
+        "tags": ["微积分", "基础课程"],
+        "resources": [
+            {
+                "type": "视频",
+                "url": "https://www.bilibili.com/video/BV1Lt411r7NQ/",
+                "recommend": true
+            }    
+        ],
+        "reflections": [
+            {
+                "title": "暂无",
+                "content": "暂无",
+                "date": "2024-01-31"
+            }
+        ]
+    },
+
+    {
+        "id": "math-102",
+        "name": "常微分方程",
+        "instructor": "童雯雯",
+        "platform": "Bilibili",
+        "description": "补充苏德矿老师课程中缺失的微分方程部分",
+        "tags": ["微积分", "基础课程"],
+        "resources": [
+            {
+                "type": "视频",
+                "url": "https://www.bilibili.com/video/BV1qk4y1R7W8/",
+                "recommend": true
+            }    
+        ],
+        "reflections": [
+            {
+                "title": "暂无",
+                "content": "暂无",
+                "date": "2024-01-31"
+            }
+        ]
+    },
+
+    {
+        "id": "math-103",
+        "name": "高等数学课后习题讲解",
+        "instructor": "Kira",
+        "platform": "Bilibili",
+        "description": "做作业用",
+        "tags": ["微积分", "基础课程"],
+        "resources": [
+            {
+                "type": "视频",
+                "url": "https://www.bilibili.com/video/BV1hV4y197qm/",
+                "recommend": true
+            }    
+        ],
+        "reflections": [
+            {
+                "title": "暂无",
+                "content": "暂无",
+                "date": "2024-01-31"
+            }
+        ]
+    },
+
+    {
+        "id": "math-104",
+        "name": "高等代数（线性代数）",
+        "instructor": "丘维生",    
+        "platform": "Bilibili",      
+        "description": "比较适合课上怎么也听不懂线代的，可以由浅入深地将你代入线代世界",  
+        "tags": ["线性代数", "基础课程"],
+        "resources": [
+          {
+            "type": "视频",
+            "url": "https://www.bilibili.com/video/BV1jR4y1M78W/",
+            "recommend": true
+          }
+        ],
+        "reflections": [
+          {
+            "title": "暂无",
+            "content": "暂无",
+            "date": "2024-01-31"
+          }
+        ]
+      },
+
+      {
+        "id": "math-105",
+        "name": "线性代数课后习题讲解",
+        "instructor": "李艳芳",    
+        "platform": "Bilibili",      
+        "description": "李艳芳老师讲习题讲的特别好，每一个方法又简单，又能震惊刚学线代的我们",  
+        "tags": ["线性代数", "基础课程"],
+        "resources": [
+          {
+            "type": "视频",
+            "url": "https://www.bilibili.com/video/BV1XV411R7jz/",
+            "recommend": true
+          }
+        ],
+        "reflections": [
+          {
+            "title": "暂无",
+            "content": "暂无",
+            "date": "2024-01-31"
+          }
+        ]
+      },
+
+      {
+        "id": "math-106",
+        "name": "复变函数与积分变换",
+        "instructor": "李红",    
+        "platform": "Bilibili",      
+        "description": "暂无",  
+        "tags": ["复变函数", "基础课程"],
+        "resources": [
+          {
+            "type": "视频",
+            "url": "https://www.bilibili.com/video/BV1W54y1Z7qK/",
+            "recommend": true
+          }
+        ],
+        "reflections": [
+          {
+            "title": "感慨",
+            "content": "复变函数当时没有好好学，平时听不懂老师讲，跟着李红老师的课只学了前两章",
+            "date": "2024-01-31"
+          }
+        ]
+      },
+
+      {
+        "id": "math-107",
+        "name": "复变函数与积分变换做题",
+        "instructor": "司徒登踏",    
+        "platform": "Bilibili",      
+        "description": "讲的很好，平时顾不上学复变，可以听这个，期末题随便做",  
+        "tags": ["复变函数", "基础课程"],
+        "resources": [
+          {
+            "type": "视频",
+            "url": "https://www.bilibili.com/video/BV16z411b7RJ/",
+            "recommend": true
+          }
+        ],
+        "reflections": [
+          {
+            "title": "暂无",
+            "content": "暂无",
+            "date": "2024-01-31"
+          }
+        ]
+      },
+
+      {
+        "id": "math-108",
+        "name": "概率论与数理统计",
+        "instructor": "李良",    
+        "platform": "Bilibili",      
+        "description": "讲的很好，学完这个课程期末题随便做",  
+        "tags": ["概率论与数理统计", "基础课程"],
+        "resources": [
+          {
+            "type": "视频",
+            "url": "https://www.bilibili.com/video/BV1X14y1C7nJ/",
+            "recommend": true
+          }
+        ],
+        "reflections": [
+          {
+            "title": "提醒",
+            "content": "这个视频链接是一部分内容，更多内容需要取拼多多花几块钱买一份",
+            "date": "2024-01-31"
+          }
+        ]
+      }
+]

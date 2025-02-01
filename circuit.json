@@ -1,0 +1,150 @@
+[
+    {
+      "id": "circuit-101",
+      "name": "电路基础期末速成",
+      "instructor": "水木珞研",
+      "platform": "Bilibili",
+      "description": "暂无",
+      "tags": ["电路分析"],
+      "resources": [
+        {
+          "type": "视频",
+          "url": "https://www.bilibili.com/video/BV1JJ4m1J74S/",
+          "recommend": true
+        }
+        
+      ],
+      "reflections": [
+        {
+          "title": "暂无",
+          "content": "暂无",
+          "date": "2024-01-31"
+        }
+      ]
+    },
+
+    {
+        "id": "circuit-102",
+        "name": "电路基础课后习题讲解",
+        "instructor": "BUFF电气考研",
+        "platform": "Bilibili",
+        "description": "暂无",
+        "tags": ["电路分析"],
+        "resources": [
+          {
+            "type": "1-8章",
+            "url": "https://www.bilibili.com/video/BV1JJ4m1J74S/",
+            "recommend": true
+          },
+          {
+            "type": "9-18章",
+            "url": "https://www.bilibili.com/video/BV1PN41137bm/",
+            "recommend": true
+          }
+          
+        ],
+        "reflections": [
+          {
+            "title": "暂无",
+            "content": "暂无",
+            "date": "2024-01-31"
+          }
+        ]
+      },
+
+      {
+        "id": "circuit-103",
+        "name": "模拟电子技术基础",
+        "instructor": "王文俊",
+        "platform": "Bilibili",
+        "description": "暂无",
+        "tags": ["模电"],
+        "resources": [
+          {
+            "type": "视频",
+            "url": "https://www.bilibili.com/video/BV11G41187VG/",
+            "recommend": true
+          }
+          
+        ],
+        "reflections": [
+          {
+            "title": "暂无",
+            "content": "暂无",
+            "date": "2024-02-01"
+          }
+        ]
+      },
+
+      {
+        "id": "circuit-103",
+        "name": "模拟电子技术基础课后习题讲解",
+        "instructor": "王文俊",
+        "platform": "Bilibili",
+        "description": "暂无",
+        "tags": ["模电"],
+        "resources": [
+          {
+            "type": "视频",
+            "url": "https://www.bilibili.com/video/BV11m4y1T7QZ/",
+            "recommend": true
+          }
+          
+        ],
+        "reflections": [
+          {
+            "title": "暂无",
+            "content": "暂无",
+            "date": "2024-02-01"
+          }
+        ]
+      },
+
+      {
+        "id": "circuit-103",
+        "name": "数字电子技术基础",
+        "instructor": "王文俊",
+        "platform": "Bilibili",
+        "description": "暂无",
+        "tags": ["数电"],
+        "resources": [
+          {
+            "type": "视频",
+            "url": "https://www.bilibili.com/video/BV18Z4y1Q7iq/",
+            "recommend": true
+          }
+          
+        ],
+        "reflections": [
+          {
+            "title": "暂无",
+            "content": "暂无",
+            "date": "2024-02-01"
+          }
+        ]
+      },
+
+      {
+        "id": "circuit-103",
+        "name": "数字电子技术基础课后习题讲解",
+        "instructor": "王文俊",
+        "platform": "Bilibili",
+        "description": "暂无",
+        "tags": ["数电"],
+        "resources": [
+          {
+            "type": "视频",
+            "url": "https://www.bilibili.com/video/BV1BR4y1W7Ux/",
+            "recommend": true
+          }
+          
+        ],
+        "reflections": [
+          {
+            "title": "暂无",
+            "content": "暂无",
+            "date": "2024-02-01"
+          }
+        ]
+      }
+  ]

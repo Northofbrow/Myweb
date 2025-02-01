@@ -1,0 +1,24 @@
+[
+    {
+        "id": "programming-101",
+        "name": "C语言",
+        "instructor": "鹏哥",
+        "platform": "Bilibili",
+        "description": "讲的C语言通俗易懂",
+        "tags": ["C语言"],
+        "resources": [
+            {
+                "type": "视频",
+                "url": "https://www.bilibili.com/video/BV1Vm4y1r7jY/",
+                "recommend": true
+            }    
+        ],
+        "reflections": [
+            {
+                "title": "暂无",
+                "content": "暂无",
+                "date": "2024-01-31"
+            }
+        ]
+    }
+]
