@@ -86,7 +86,7 @@ async function getAllCourses() {
     
     for (const category of categories) {
         try {
-            const response = await fetch(`courses/${category}.json`);
+            const response = await fetch(`Myweb/courses/${category}.json`);
             const data = await response.json();
             allCourses.push(...data);
         } catch (error) {
