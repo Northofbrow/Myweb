@@ -3,57 +3,82 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.querySelector('[onclick="loadCourses(\'math\')"]').classList.add('active');
 });
 
+
 async function loadCourses(category) {
     try {
-        const response = await fetch(`courses/${category}.json`);
+        const loadingElement = document.getElementById('loading');
+        const courseListElement = document.getElementById('courseList');
+        
+        // 显示加载动画
+        loadingElement.style.display = 'block';
+        courseListElement.innerHTML = ''; // 清空旧内容
+
+        // 添加 5 秒超时限制
+        const timeoutPromise = new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('请求超时')), 5000)
+        );
+
+        const response = await Promise.race([
+            fetch(`/Myweb/courses/${category}.json`),
+            timeoutPromise
+        ]);
+
         if (!response.ok) throw new Error(`HTTP错误: ${response.status}`);
         
         const courses = await response.json();
         renderCourses(courses);
         
-        document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-        document.querySelector(`[onclick="loadCourses('${category}')"]`).classList.add('active');
+        // 更新导航状态
+        document.querySelectorAll('.nav-link').forEach(link => 
+            link.classList.remove('active')
+        );
+        document.querySelector(`[onclick="loadCourses('${category}')"]`)
+            .classList.add('active');
         
     } catch (error) {
         document.getElementById('courseList').innerHTML = `
             <div class="col-12">
-                <div class="alert alert-danger">加载失败: ${error.message}</div>
-            </div>
-        `;
-    }
-}
-
-function renderCourses(coursesData) {
-    const container = document.getElementById('courseList');
-    container.innerHTML = coursesData.map(course => `
-        <div class="col">
-            <div class="card course-card h-100" onclick="showCourseDetail('${course.id}')">
-                <div class="card-body">
-                    <h5 class="card-title">${course.name}</h5>
-                    <p class="text-muted">
-                        ${course.instructor ? course.instructor : ''}
-                        ${course.platform ? '· ' + course.platform : ''}
-                    </p>
-                    <p>${course.description || ''}</p>
-                    <div class="mb-2">
-                        ${(course.tags || []).map(tag => `
-                            <span class="badge bg-secondary">${tag}</span>
-                        `).join('')}
-                    </div>
-                    <div class="resources">
-                        ${(course.resources || []).map(res => `
-                            <a href="javascript:void(0)" 
-                               class="btn btn-sm btn-outline-primary me-1"
-                               onclick="event.stopPropagation(); window.open('${res.url}', '_blank')">
-                                ${res.type}
-                            </a>
-                        `).join('')}
-                    </div>
+                <div class="alert alert-danger">
+                    ${error.message || '数据加载失败'}
                 </div>
             </div>
-        </div>
-    `).join('');
+        `;
+    } finally {
+        document.getElementById('loading').style.display = 'none';
+    }
 }
+  
+  function renderCourses(coursesData) {
+    const container = document.getElementById('courseList');
+    container.innerHTML = coursesData.map(course => `
+      <div class="col">
+        <div class="card course-card h-100" onclick="showCourseDetail('${course.id}')">
+          <div class="card-body">
+            <h5 class="card-title">${course.name}</h5>
+            <p class="text-muted">
+              ${course.instructor ? course.instructor : ''}
+              ${course.platform ? '· ' + course.platform : ''}
+            </p>
+            <p>${course.description || ''}</p>
+            <div class="mb-2">
+              ${(course.tags || []).map(tag => `
+                <span class="badge bg-secondary">${tag}</span>
+              `).join('')}
+            </div>
+            <div class="resources">
+              ${(course.resources || []).map(res => `
+                <a href="javascript:void(0)" 
+                   class="btn btn-sm btn-outline-primary me-1"
+                   onclick="event.stopPropagation(); window.open('${res.url}', '_blank')">
+                  ${res.type}
+                </a>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
 
 async function getAllCourses() {
     const categories = ['math', 'circuit', 'programming'];
@@ -138,3 +163,4 @@ function searchCourses() {
         renderCourses(results);
     });
 }
+

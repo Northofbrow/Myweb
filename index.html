@@ -56,7 +56,14 @@
     </nav>
 
     <main class="container my-4">
+        <!-- 仅保留一个 courseList -->
         <div id="courseList" class="row row-cols-1 row-cols-md-2 g-4"></div>
+        
+        <!-- 加载动画移到容器外 -->
+        <div id="loading" class="text-center py-5" style="display: none;">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p class="mt-2">正在加载课程数据...</p>
+        </div>
     </main>
 
     <div class="modal fade" id="courseModal">
